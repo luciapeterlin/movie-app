@@ -1,0 +1,56 @@
+.carousel{
+	height:90vh; 	
+}
+
+.d-block{
+	opacity: 0.5;
+	background-position: center bottom; 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	object-fit: cover;
+}
+
+.carousel-caption{
+	width: 50%; 
+	margin: auto;
+	top: 50%;
+	ms-transform: translateY(-50%); 
+	transform: translateY(-50%);
+}
+
+.BsInfoCircle{
+	color:white;
+	margin-right:10px;
+}
+
+.original-title{
+	color: #d9d9d9;
+}
+
+.carousel-overview{
+	padding: 20px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+
+.d-block{
+	height: 100%;
+}
+
+.carousel-caption p{
+	font-size: 0px;
+}
+
+} /*end @media screen and (min-width: 600px) and (max-width: 1023px)*/
+
+@media all and (max-width: 599px) {
+
+.d-block{
+	height: 100%;
+}
+
+.carousel-caption p{
+	font-size: 0px;
+}
+
+} /*end @media all and (max-width: 599px)*/

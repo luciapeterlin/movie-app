@@ -1,0 +1,19 @@
+body{
+	background: #000000;
+	color: white;
+}
+
+.movies > .row {
+	overflow-x: auto;
+	flex-wrap: nowrap;
+}
+
+.popularmovies-container{
+	width: 90%;
+	margin: 30px auto;
+}
+
+h4{
+	padding:10px;
+}
+

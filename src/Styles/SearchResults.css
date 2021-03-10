@@ -1,0 +1,71 @@
+.search-result-container{
+	width: 300px; 
+	margin: 10px;
+}
+
+.search-result-image{
+	width: 100%;
+}
+
+.no-image-container{
+	width: 300px;
+	height: 450px;
+	margin: 10px;
+	background: #171717; 
+	text-align: center;
+}
+
+.BiConfused{
+	color: #282929; 
+	font-size: 80px;
+	margin-top: 50%;
+}
+
+.no-image-text{
+	color: #282929;
+	font-size: 18px; 
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+
+.search-result-container{
+	width: 200px;
+}
+
+.no-image-container{
+	width: 200px; 
+}
+
+.BiConfused{
+	font-size: 3em; 
+	margin-top:50%;
+}
+
+.no-image-text{
+	font-size: 1em;
+}
+
+} /*end @media screen and (min-width: 600px) and (max-width: 1023px)*/
+
+@media all and (max-width: 599px) {
+
+.search-result-container{
+	width: 120px;
+}
+
+.no-image-container{
+	width: 120px; 
+}
+
+.BiConfused{
+	font-size: 1.5em; 
+	margin-top:50%;
+}
+
+.no-image-text{
+	font-size: 0.7em;
+}
+
+} /*end @media all and (max-width: 599px)*/

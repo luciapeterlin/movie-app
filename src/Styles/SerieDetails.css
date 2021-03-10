@@ -1,0 +1,67 @@
+.background-image{
+	opacity: 0.1;
+	object-fit: cover;
+	height: 100%;
+}
+
+.serie-poster-path{
+	width: 100%;
+}
+
+.ImgOverlay{
+	width: 90%; 
+	padding: 30px;
+	margin: auto; 
+}
+
+.column-1{
+	width: 30%; 
+	padding: 20px;
+	float: left;
+}
+
+.column-2{
+	width: 70%; 
+	padding: 20px;
+	float: left;
+}
+
+.movie-original-title{
+	color: #d9d9d9;
+}
+
+.BsHeartFill{
+	color: white;
+	margin-right: 10px;
+}
+
+.BsFillXCircleFill{
+	color: white;
+	margin-right: 10px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+
+.background-image{
+	height: 100vh;
+	object-fit: cover;
+}
+
+} /*end @media screen and (min-width: 600px) and (max-width: 1023px)*/
+
+@media all and (max-width: 599px) {
+
+.background-image{
+	height: 200vh;
+	object-fit: cover;
+}
+
+.column-1{
+	width: 100%; 
+}
+
+.column-2{
+	width: 100%; 
+}
+
+} /*end @media all and (max-width: 599px)*/

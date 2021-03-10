@@ -1,0 +1,33 @@
+.favorites-container{
+	width: 90%;
+	margin: 30px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;	
+}
+
+.favoriteposter-container{
+	width: 300px;
+	margin: 10px;
+	position: relative;
+}
+
+.favoriteimage-container{
+	width: 100%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+
+.favoriteposter-container{
+	width: 200px;
+}
+
+} /*end @media screen and (min-width: 600px) and (max-width: 1023px)*/
+
+@media all and (max-width: 599px) {
+
+.favoriteposter-container{
+	width: 120px;
+}
+
+} /*end @media all and (max-width: 599px)*/
