@@ -13,3 +13,10 @@ Una aplicación web para descubrir y guardar tus peliculas y series favoritas ut
 3) PELICULAS / SERIES: En esta sección se pueden filtrar películas y series por género y sus resultados pueden ordenarse por fecha (más recientes), popularidad y orden alfabético. 
 4) DETALLE DE PELÍCULAS Y SERIES: Desde detalle de una película/ serie se puede obtener más información. Incluye un botón para añadir a Mi Lista de favoritos.
 5) MI LISTA: Aquí se almacenan todas las películas y series agregadas como favoritos por los usuarios. En el header se mantiene actualizado el contador de ítems de Mi Lista.
+
+## Para utilizar este proyecto: 
+
+1) Descargar o clonar el repositorio.
+2) Abrir la consola, ubicarse en la carpeta del proyecto y correr el comando npm install.
+3) Una vez instalado, correr el comando npm start.
+4) Abrir http://localhost:3000 en el navegador para visualizar la aplicación.
