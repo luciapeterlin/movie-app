@@ -2,6 +2,7 @@ import React , {useState, useEffect} from "react";
 import MoviePoster from "../Components/MoviePoster";
 import Loading from "../Components/Loading";
 import {Form} from 'react-bootstrap';
+import { getGenres } from '../services/genre'
 import "../Styles/Movies.css";
 
 function Movies(){
@@ -13,15 +14,15 @@ function Movies(){
 
 	useEffect(() => {
 		setSpinner(true);
-		fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=c2c2cd525b5005c063f7b1a9d54ab699&language=es-ES')
-			.then((res) => res.json())
-			.then((data) => {
-		  		setGenreOptions(data.genres);
-		  		setSpinner(false);
-		  	})
-		  	.catch((error)=>{
-            	console.log(error)
-        	})
+    const fetchData = async () => {
+      try {
+        setGenreOptions(await getGenres())
+        setSpinner(false)
+      } catch (error) {
+        console.log('Uops! something went wrong:', error)
+      }
+    }
+    fetchData()
 	}, []);
 
 	const handleChange = (e) => {
