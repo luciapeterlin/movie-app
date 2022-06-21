@@ -1,4 +1,5 @@
 import React , {useState, useEffect} from "react";
+import { getTrendingCarousel } from '../services/carousel'
 import {Carousel, Badge, Button} from "react-bootstrap";
 import Loading from "../Components/Loading";
 import {BsFillStarFill, BsInfoCircle} from "react-icons/bs";
@@ -13,16 +14,16 @@ function TrendingCarousel(){
   const image = "https://image.tmdb.org/t/p/w1280";
 
   useEffect(() => {
-  	fetch('https://api.themoviedb.org/3/trending/all/day?api_key=c2c2cd525b5005c063f7b1a9d54ab699&language=es-ES')
-  		.then((res) => res.json())
-  		.then((data) => {
-  	  	console.log(data);
-  	  	setResults(data.results);
-        setSpinner(false);
-  	  })
-      .catch((error)=>{
-            console.log(error)
-        })
+    setSpinner(true);
+    const fetchData = async () => {
+      try {
+        setResults(await getTrendingCarousel())
+        setSpinner(false)
+      } catch (error) {
+        console.log('Uops! something went wrong:', error)
+      }
+    }
+    fetchData()
   }, []);
 
   return(

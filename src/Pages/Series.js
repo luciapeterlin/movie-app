@@ -3,6 +3,7 @@ import {Form} from "react-bootstrap";
 import Loading from "../Components/Loading";
 import SeriePoster from "../Components/SeriePoster";
 import "../Styles/Series.css";
+import { getTvGenres } from '../services/seriesGenre'
 
 function Series(){
 
@@ -12,15 +13,16 @@ function Series(){
 	const [spinner, setSpinner] = useState(true);
 
 	useEffect(() => {
-		setSpinner(false);
-		fetch('https://api.themoviedb.org/3/genre/tv/list?api_key=c2c2cd525b5005c063f7b1a9d54ab699&language=es-ES')
-			.then((res) => res.json())
-			.then((data) => {
-		  		setGenreOptions(data.genres);
-		  	})
-		  	.catch((error)=>{
-            	console.log(error)
-       	 	})
+		setSpinner(true);
+    const fetchData = async () => {
+      try {
+        setGenreOptions(await getTvGenres())
+        setSpinner(false)
+      } catch (error) {
+        console.log('Uops! something went wrong:', error)
+      }
+    }
+    fetchData()
 	}, []);
 
 	const handleChange = (e) => {
