@@ -1,4 +1,5 @@
 import React, {useState, useEffect, useContext} from "react";
+import { getMovie } from '../services/movie'
 import {Card, Button, Badge} from 'react-bootstrap';
 import { BsHeartFill, BsFillStarFill, BsFillXCircleFill } from "react-icons/bs";
 import {MyListContext} from "../Context/MyListContext";
@@ -15,18 +16,17 @@ function DetallePelicula(props){
 	const [spinner, setSpinner] = useState(true);
 	const [alert,setAlert] = useState({variant:"",text:""})
 
-	useEffect(() => {
-		setSpinner(true)
-		fetch(`https://api.themoviedb.org/3/movie/${(props.match.params.id)}?api_key=c2c2cd525b5005c063f7b1a9d54ab699&language=es`)
-			.then((res) => res.json())
-			.then((data) => {
-		  			console.log(data);
-		  			setPelicula(data);
-		  			setSpinner(false);
-		  			})
-			.catch((error)=>{
-	            console.log(error)
-	        })
+  useEffect(() => {
+  	setSpinner(true);
+    const fetchData = async () => {
+    	try{
+    		setPelicula(await getMovie(props))
+    		setSpinner(false);
+    	} catch (error) {
+        console.log('Uops! something went wrong:', error)
+      }
+    } 
+    fetchData()
 	}, []);
 
 

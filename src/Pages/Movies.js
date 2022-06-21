@@ -1,8 +1,8 @@
 import React , {useState, useEffect} from "react";
+import { getGenres } from '../services/moviesGenre'
 import MoviePoster from "../Components/MoviePoster";
 import Loading from "../Components/Loading";
 import {Form} from 'react-bootstrap';
-import { getGenres } from '../services/genre'
 import "../Styles/Movies.css";
 
 function Movies(){

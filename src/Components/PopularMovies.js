@@ -1,4 +1,5 @@
 import React , {useState, useEffect} from "react";
+import { getPopularMovies } from '../services/popularMovies'
 import PopularMoviesPoster from "../Components/PopularMoviesPoster";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -46,15 +47,14 @@ function PopularMovies(){
   const [results, setResults] = useState([]);
 
   useEffect(() => {
-    fetch('https://api.themoviedb.org/3/movie/popular?api_key=c2c2cd525b5005c063f7b1a9d54ab699&language=es-ES')
-  		.then((res) => res.json())
-  		.then((data) => {
-  	  			console.log(data);
-  	  			setResults(data.results);
-          })
-      .catch((error)=>{
-        console.log(error)
-      })
+    const fetchData = async () => {
+      try {
+        setResults(await getPopularMovies())
+      } catch (error) {
+        console.log('Uops! something went wrong:', error)
+      }
+    }
+    fetchData()
   }, []);
 
 
