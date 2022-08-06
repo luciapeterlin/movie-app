@@ -3,6 +3,9 @@
 Una aplicación web para descubrir y guardar tus peliculas y series favoritas utilizando la API de The Movie Database.
 
 #### [Vistar sitio](http://movie-app.luciapeterlin.surge.sh)
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
+
 
 # Sobre el proyecto
 
