@@ -1,4 +1,4 @@
-# Movie & TV shows Search App with React JS
+# Movies & TV shows Search App with React JS
 
 A web application to discover and save your favorite movies and TV shows using The Movie Database API.
 
@@ -7,14 +7,14 @@ A web application to discover and save your favorite movies and TV shows using T
 
 
 
-# About the project
+# About this project
 
 ## Sections:
 
-1) HOME: Carousel with the latest trends in film and tv shows. List of most popular movies and series. 
+1) HOME: Carousel with the latest trends in movies and tv shows. List of most popular movies and series. 
 2) SEARCH: Search for movies, TV shows and actors. Results in English and Spanish. The search engine can be accessed from any section of the application.
-3) MOVIES / TV SHOWS: En esta sección se pueden filtrar películas y series por género y sus resultados pueden ordenarse por fecha (más recientes), popularidad y orden alfabético. 
-4) DETALLE DE PELÍCULAS Y SERIES: Shows more information about a particular movie or series. Includes a button to add to My Favorites List.
+3) MOVIES / TV SHOWS: In this section you can filter movies and series by genre and the results can be sorted by date (most recent), popularity and alphabetical order.
+4) MOVIES & TV SHOWS DETAILS: Shows more information about a particular movie or series. Includes a button to add to My Favorites List.
 5) MY LIST: All the movies and series added as favorites by the user are stored in this section.
 
 ## To use this project: 
