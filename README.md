@@ -1,25 +1,25 @@
-# Buscador de películas y series React JS
+# Movie & TV shows Search App with React JS
 
-Una aplicación web para descubrir y guardar tus peliculas y series favoritas utilizando la API de The Movie Database.
+A web application to discover and save your favorite movies and TV shows using The Movie Database API.
 
-#### [Vistar sitio](http://movie-app.luciapeterlin.surge.sh)
+#### [Visite website](http://movie-app.luciapeterlin.surge.sh)
 ![Alt Text](https://media.giphy.com/media/qdEhVItAxhYeK3CMV7/giphy.gif)
 
 
 
-# Sobre el proyecto
+# About the project
 
-## Secciones:
+## Sections:
 
-1) HOME: Carousel con las últimas tendencias en cine y televisión. Lista de películas y series más populares. 
-2) BUSCADOR: Realiza búsquedas de películas, series y actores. Devuelve resultados tanto en inglés como en español. Se puede acceder al buscador desde cualquier página de la aplicación.
-3) PELICULAS / SERIES: En esta sección se pueden filtrar películas y series por género y sus resultados pueden ordenarse por fecha (más recientes), popularidad y orden alfabético. 
-4) DETALLE DE PELÍCULAS Y SERIES: Desde detalle de una película/ serie se puede obtener más información. Incluye un botón para añadir a Mi Lista de favoritos.
-5) MI LISTA: Aquí se almacenan todas las películas y series agregadas como favoritos por los usuarios. En el header se mantiene actualizado el contador de ítems de Mi Lista.
+1) HOME: Carousel with the latest trends in film and tv shows. List of most popular movies and series. 
+2) SEARCH: Search for movies, TV shows and actors. Results in English and Spanish. The search engine can be accessed from any section of the application.
+3) MOVIES / TV SHOWS: En esta sección se pueden filtrar películas y series por género y sus resultados pueden ordenarse por fecha (más recientes), popularidad y orden alfabético. 
+4) DETALLE DE PELÍCULAS Y SERIES: Shows more information about a particular movie or series. Includes a button to add to My Favorites List.
+5) MY LIST: All the movies and series added as favorites by the user are stored in this section.
 
-## Para utilizar este proyecto: 
+## To use this project: 
 
-1) Descargar o clonar el repositorio.
-2) Abrir la consola, ubicarse en la carpeta del proyecto y correr el comando npm install.
-3) Una vez instalado, correr el comando npm start.
-4) Abrir http://localhost:3000 en el navegador para visualizar la aplicación.
+1) Download or clone the repository.
+2) Open the console and on the project folder run the npm install command.
+3) Once installed, run the npm start command.
+4) Open http://localhost:3000 in the browser.
